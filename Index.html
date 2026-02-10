@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .message {
+            padding: 40px 20px;
+            font-size: 1.5em;
+        }
+        footer {
+            padding: 20px;
+            font-size: 0.9em;
+            background: rgba(0,0,0,0.2);
+        }
+        .heart {
+            font-size: 2em;
+            animation: heartbeat 1.2s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #ff4e8a;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #ffe6f0;
+        }
+    </style>
+</head>
+<body><header>
+    <h1>Happy Valentine's Day ❤️</h1>
+    <p>Every moment with you is special ✨</p>
+</header><section class="gallery">
+    <!-- Save your uploaded images in the same folder as this file and rename them as below -->
+    <img src="image1.jpg" alt="Memory 1">
+    <img src="image2.jpg" alt="Memory 2">
+    <img src="image3.jpg" alt="Memory 3">
+    <img src="image4.jpg" alt="Memory 4">
+    <img src="image5.jpg" alt="Memory 5">
+    <img src="image6.jpg" alt="Memory 6">
+    <img src="image7.jpg" alt="Memory 7">
+    <img src="image8.jpg" alt="Memory 8">
+</section><section class="message">
+    <p>
+        You are my happiness, my best friend, and my forever ❤️<br>
+        Thank you for filling my life with love and smiles.
+    </p>
+    <div class="heart">💖</div>
+    <button onclick="showLove()">Click for a Surprise 💌</button>
+    <p id="surprise" style="margin-top:20px;"></p>
+</section><footer>
+    Made with love 💕
+</footer><!-- Romantic Background Music --><div style="position: fixed; bottom: 10px; right: 10px;">
+    <iframe width="0" height="0" 
+        src="https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1&loop=1&playlist=2Vv-BfVoq4g" 
+        frameborder="0" 
+        allow="autoplay">
+    </iframe>
+</div><script>
+    function showLove() {
+        document.getElementById("surprise").innerHTML = "I Love You More Than Words Can Say ❤️";
+    }
+</script></body>
+</html>
